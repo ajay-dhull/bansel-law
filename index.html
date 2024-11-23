@@ -27,7 +27,11 @@
 <body>
     <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Bansal Lawyers <span>A Law Firm Agency</span></a>
+            <a class="navbar-brand" href="index.html"
+                style="background: #fff; padding: 3px 5px; border-radius: 5px; margin-left: -10px;">
+                <img src="https://www.bansallawyers.com.au/images/logo/Bansal_Lawyers.png" alt="Bansal Lawyers Logo"
+                    style="height: 50px; max-width: 100%; object-fit: contain;">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -47,7 +51,6 @@
             </div>
         </div>
     </nav>
-    <!-- END nav -->
 
     <div class="hero-wrap js-fullheight" style="background-image: url('images/coart\ 1.jpg');"
         data-stellar-background-ratio="0.5">
@@ -55,20 +58,83 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
                 data-scrollax-parent="true">
-                <div class="col-md-6 ftco-animate">
+                <div class="col-md-8 ftco-animate">
                     <h2 class="subheading">Welcome To Bansal Lawyers</h2>
-                    <h1>Dedicated Attorneys Protecting Your
-                        <span class="txt-rotate" data-period="2000"
-                            data-rotate='[ "Freedom.", "Rights.", "Future.", "Justice." ]'></span>
+                    <h1 class="mb-4" style="font-size: 3.5rem; font-weight: 700; line-height: 1.2;">
+                        There's No Legal Puzzle,<br>
+                        <span class="rotating-text">We Can't Solve.</span>
                     </h1>
-                    <p class="mb-4">With a proven track record of success, we provide expert legal representation to
-                        safeguard your rights, freedom, and future. Trust Bansal Lawyers to stand by your side.</p>
-                    <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Schedule Your Consultation <span
-                                class="ion-ios-arrow-forward"></span></a></p>
+                    <p class="mb-4" style="font-size: 1.2rem;">
+                        With a proven track record of success, we provide expert legal representation to
+                        safeguard your rights, freedom, and future. Trust Bansal Lawyers to stand by your side.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Schedule Your Consultation
+                            <span class="ion-ios-arrow-forward"></span>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+        /* Rotating Text Effect with Color Change */
+        .rotating-text {
+            display: inline-block;
+            animation: rotateText 3s linear infinite, colorChange 10s linear infinite;
+        }
+
+        @keyframes rotateText {
+
+            0%,
+            10% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            20%,
+            80% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            90%,
+            100% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #ff4757;
+                /* Red */
+            }
+
+            25% {
+                color: #ffa502;
+                /* Orange */
+            }
+
+            50% {
+                color: #2ed573;
+                /* Green */
+            }
+
+            75% {
+                color: #1e90ff;
+                /* Blue */
+            }
+
+            100% {
+                color: #ff4757;
+                /* Back to Red */
+            }
+        }
+    </style>
+
+
     <!-- START: Services Section -->
     <section class="ftco-section ftco-no-pt">
         <div class="container">
