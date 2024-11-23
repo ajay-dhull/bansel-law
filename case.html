@@ -59,6 +59,7 @@
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
           <h1 class="mb-3 bread">Case Studies</h1>
+          <p>Discover how Bansal Lawyers has consistently delivered successful outcomes in complex legal cases.</p>
           <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
                   class="ion-ios-arrow-forward"></i></a></span> <span>Case Studies <i
                 class="ion-ios-arrow-forward"></i></span></p>
@@ -70,101 +71,139 @@
   <section class="ftco-section">
     <div class="container">
       <div class="row">
+        <!-- Case Study 1 -->
         <div class="col-md-4 ftco-animate">
           <div class="case img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/case-1.jpg);">
+            style="background-image: url(images/case-1.jpg);" onclick="showCaseDetails(1)">
             <div class="text text-center">
-              <h3><a href="#">Corporate Legal Separation</a></h3>
+              <h3>Corporate Legal Separation</h3>
               <span>Corporate Law</span>
             </div>
           </div>
         </div>
+        <!-- Case Study 2 -->
         <div class="col-md-4 ftco-animate">
           <div class="case img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/case-2.jpg);">
+            style="background-image: url(images/case-2.jpg);" onclick="showCaseDetails(2)">
             <div class="text text-center">
-              <h3><a href="#">Corporate Legal Separation</a></h3>
-              <span>Corporate Law</span>
+              <h3>Intellectual Property Protection</h3>
+              <span>IP Law</span>
             </div>
           </div>
         </div>
+        <!-- Case Study 3 -->
         <div class="col-md-4 ftco-animate">
           <div class="case img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/case-3.jpg);">
+            style="background-image: url(images/case-3.jpg);" onclick="showCaseDetails(3)">
             <div class="text text-center">
-              <h3><a href="#">Corporate Legal Separation</a></h3>
-              <span>Corporate Law</span>
+              <h3>Employment Law Dispute</h3>
+              <span>Labor Law</span>
             </div>
           </div>
         </div>
+        <!-- Case Study 4 -->
         <div class="col-md-4 ftco-animate">
           <div class="case img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/case-4.jpg);">
+            style="background-image: url(images/case-4.jpg);" onclick="showCaseDetails(4)">
             <div class="text text-center">
-              <h3><a href="#">Corporate Legal Separation</a></h3>
-              <span>Corporate Law</span>
+              <h3>Real Estate Transaction</h3>
+              <span>Real Estate Law</span>
             </div>
           </div>
         </div>
+        <!-- Case Study 5 -->
         <div class="col-md-4 ftco-animate">
           <div class="case img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/case-5.jpg);">
+            style="background-image: url(images/case-5.jpg);" onclick="showCaseDetails(5)">
             <div class="text text-center">
-              <h3><a href="#">Corporate Legal Separation</a></h3>
-              <span>Corporate Law</span>
+              <h3>Criminal Defense Victory</h3>
+              <span>Criminal Law</span>
             </div>
           </div>
         </div>
+        <!-- Case Study 6 -->
         <div class="col-md-4 ftco-animate">
           <div class="case img d-flex align-items-center justify-content-center"
-            style="background-image: url(images/case-6.jpg);">
+            style="background-image: url(images/case-6.jpg);" onclick="showCaseDetails(6)">
             <div class="text text-center">
-              <h3><a href="#">Corporate Legal Separation</a></h3>
-              <span>Corporate Law</span>
+              <h3>Family Law Resolution</h3>
+              <span>Family Law</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col text-center">
-          <div class="block-27">
-            <ul>
-              <li><a href="#">&lt;</a></li>
-              <li class="active"><span>1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">&gt;</a></li>
-            </ul>
+      <!-- Case Description Section -->
+      <div class="row mt-5" id="case-description" style="display: none;">
+        <div class="col-md-12">
+          <div class="bg-dark text-white p-4" id="case-details" style="border-radius: 5px;">
+            <!-- Content will be injected dynamically -->
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <script>
+    const caseData = {
+      1: {
+        title: "Corporate Legal Separation",
+        content: `
+        <h2 style="color: yellow;">Corporate Legal Separation</h2>
+        <p style="color: white;">We helped a multinational company navigate a challenging corporate separation. Our expertise in corporate law ensured a smooth transition, protecting the interests of both parties and avoiding legal pitfalls. This case highlights our ability to deliver innovative solutions to complex legal challenges.</p>
+      `
+      },
+      2: {
+        title: "Intellectual Property Protection",
+        content: `
+        <h2 style="color: yellow;">Intellectual Property Protection</h2>
+        <p style="color: white;">Bansal Lawyers secured crucial trademarks and patents for a technology startup, protecting their innovations and market position. We provided end-to-end support, from filing applications to defending intellectual property in court, ensuring the client’s competitive advantage.</p>
+      `
+      },
+      3: {
+        title: "Employment Law Dispute",
+        content: `
+        <h2 style="color: yellow;">Employment Law Dispute</h2>
+        <p style="color: white;">Our team successfully resolved a labor dispute between a company and its former employee, avoiding lengthy litigation. By prioritizing mediation and negotiation, we achieved a fair settlement that upheld workplace policies and maintained harmony within the organization.</p>
+      `
+      },
+      4: {
+        title: "Real Estate Transaction",
+        content: `
+        <h2 style="color: yellow;">Real Estate Transaction</h2>
+        <p style="color: white;">We facilitated a large-scale real estate acquisition for a developer, ensuring compliance with regulatory requirements. Our detailed legal review and proactive advice minimized risks and secured favorable terms for the client, exemplifying our dedication to excellence in real estate law.</p>
+      `
+      },
+      5: {
+        title: "Criminal Defense Victory",
+        content: `
+        <h2 style="color: yellow;">Criminal Defense Victory</h2>
+        <p style="color: white;">Bansal Lawyers provided exceptional representation in a high-profile criminal case, achieving an acquittal for our client. Our strategic defense, thorough investigation, and in-depth knowledge of criminal law led to this landmark victory.</p>
+      `
+      },
+      6: {
+        title: "Family Law Resolution",
+        content: `
+        <h2 style="color: yellow;">Family Law Resolution</h2>
+        <p style="color: white;">In a sensitive family law case, we helped our client achieve a fair resolution in child custody and asset division. Our compassionate approach and legal expertise ensured the best outcome, maintaining our client’s dignity and protecting their future.</p>
+      `
+      }
+    };
 
-  <section class="ftco-section ftco-no-pt ftco-no-pb">
-    <div class="container">
-      <div class="row d-flex justify-content-end">
-        <div class="col-md-8 py-4 px-md-4 bg-primary">
-          <div class="row">
-            <div class="col-md-6 ftco-animate d-flex align-items-center">
-              <h2 class="mb-0" style="color:white; font-size: 24px;">Subscribe to Our Newsletter</h2>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control" placeholder="Enter email address">
-                  <input type="submit" value="Subscribe" class="submit px-3">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    function showCaseDetails(caseId) {
+      const descriptionSection = document.getElementById("case-description");
+      const detailsContainer = document.getElementById("case-details");
+
+      // Inject the content for the selected case
+      detailsContainer.innerHTML = caseData[caseId].content;
+
+      // Display the description section
+      descriptionSection.style.display = "block";
+
+      // Scroll to the description section
+      descriptionSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
 
   <!-- START: Footer Section -->
   <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -173,13 +212,13 @@
         <!-- Logo and Description -->
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="logo"><a href="#">Legalcare <span>A Law Firm Agency</span></a></h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.</p>
+            <h2 class="logo"><a href="#">BansalLawyers <span>A Law Firm Agency</span></a></h2>
+            <p>Professional legal services provided with expertise and care in Melbourne and beyond.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left mt-5">
-              <li class="ftco-animate"><a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#" aria-label="Facebook"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61562008576642"
+                  aria-label="Facebook"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/bansallawyers?igsh=N21ubnVkeDhibjVw"
+                  aria-label="Instagram"><span class="icon-instagram"></span></a></li>
             </ul>
           </div>
         </div>
@@ -189,18 +228,22 @@
           <div class="ftco-footer-widget mb-4 ml-md-5">
             <h2 class="ftco-heading-2">Practice Areas</h2>
             <ul class="list-unstyled">
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Employment Law</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Employment Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
             </ul>
           </div>
         </div>
@@ -211,12 +254,12 @@
             <h2 class="ftco-heading-2">Have a Question?</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
-                    Francisco, California, USA</span></li>
-                <li><a href="tel:+23923929210"><span class="icon icon-phone"></span><span class="text">+2 392 3929
-                      210</span></a></li>
-                <li><a href="mailto:info@yourdomain.com"><span class="icon icon-envelope"></span><span
-                      class="text">info@yourdomain.com</span></a></li>
+                <li><span class="icon icon-map-marker"></span><span class="text">Level 8/278 Collins St, Melbourne VIC
+                    3000, Australia</span></li>
+                <li><a href="tel:000000000"><span class="icon icon-phone"></span><span class="text">000000000</span></a>
+                </li>
+                <li><a href="mailto:Info@bansallawyers.com.au"><span class="icon icon-envelope"></span><span
+                      class="text">Info@bansallawyers.com.au</span></a></li>
               </ul>
             </div>
           </div>
@@ -246,15 +289,14 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <p>&copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | Bansal Lawyers <i
-              class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">Colorlib</a>
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Bansal Lawyers
           </p>
         </div>
       </div>
     </div>
   </footer>
   <!-- END: Footer Section -->
+
 
   <!-- START: Loader -->
   <div id="ftco-loader" class="show fullscreen">

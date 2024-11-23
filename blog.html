@@ -28,27 +28,28 @@
 <body>
 
   <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-		  <a class="navbar-brand" href="index.html">Bansal Lawyers <span>A Law Firm Agency</span></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="oi oi-menu"></span> Menu
-		  </button>
-	
-		  <div class="collapse navbar-collapse" id="ftco-nav">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-			  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			  <li class="nav-item"><a href="attorneys.html" class="nav-link">Attorneys</a></li>
-			  <li class="nav-item"><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
-			  <li class="nav-item"><a href="case.html" class="nav-link">Case Studies</a></li>
-			  <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-			  <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
-			</ul>
-		  </div>
-		</div>
-	</nav>
-	   <!-- END nav -->
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Bansal Lawyers <span>A Law Firm Agency</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="attorneys.html" class="nav-link">Attorneys</a></li>
+          <li class="nav-item"><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
+          <li class="nav-item"><a href="case.html" class="nav-link">Case Studies</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
 
   <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');"
     data-stellar-background-ratio="0.5">
@@ -56,9 +57,10 @@
     <div class="container">
       <div class="row no-gutters slider-text align-items-end justify-content-center">
         <div class="col-md-9 ftco-animate pb-5 text-center">
-          <h1 class="mb-3 bread">Blog</h1>
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                  class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span>
+          <h1 class="mb-3 bread" id="blog-title">Blog</h1>
+          <p class="breadcrumbs">
+            <span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span>
+            <span>Blog <i class="ion-ios-arrow-forward"></i></span>
           </p>
         </div>
       </div>
@@ -67,15 +69,14 @@
 
   <section class="ftco-section bg-light">
     <div class="container">
-      <div class="row d-flex">
-
+      <div class="row d-flex" id="blog-list">
         <!-- Blog 1 -->
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry justify-content-end">
             <div class="text px-4 py-4">
-              <h3 class="heading mb-0"><a href="#">Key Insights into Industrial Laws</a></h3>
+              <h3 class="heading mb-0"><a href="#" onclick="showFullBlog(1)">Key Insights into Industrial Laws</a></h3>
             </div>
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+            <a href="#" class="block-20" style="background-image: url('images/image_1.jpg');" onclick="showFullBlog(1)">
             </a>
             <div class="text p-4 float-right d-block">
               <div class="topper d-flex align-items-center">
@@ -88,18 +89,17 @@
                 </div>
               </div>
               <p>An in-depth look at how industrial laws shape workplace policies and standards.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
+              <p><a href="#" class="btn btn-primary" onclick="showFullBlog(1)">Read more</a></p>
             </div>
           </div>
         </div>
-
         <!-- Blog 2 -->
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry justify-content-end">
             <div class="text px-4 py-4">
-              <h3 class="heading mb-0"><a href="#">Navigating Corporate Litigation</a></h3>
+              <h3 class="heading mb-0"><a href="#" onclick="showFullBlog(2)">Navigating Corporate Litigation</a></h3>
             </div>
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+            <a href="#" class="block-20" style="background-image: url('images/image_2.jpg');" onclick="showFullBlog(2)">
             </a>
             <div class="text p-4 float-right d-block">
               <div class="topper d-flex align-items-center">
@@ -112,7 +112,7 @@
                 </div>
               </div>
               <p>Explore strategies for managing corporate disputes effectively.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
+              <p><a href="#" class="btn btn-primary" onclick="showFullBlog(2)">Read more</a></p>
             </div>
           </div>
         </div>
@@ -121,9 +121,10 @@
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry justify-content-end">
             <div class="text px-4 py-4">
-              <h3 class="heading mb-0"><a href="#">Understanding Intellectual Property Rights</a></h3>
+              <h3 class="heading mb-0"><a href="#" onclick="showFullBlog(3)">Understanding Intellectual Property
+                  Rights</a></h3>
             </div>
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+            <a href="#" class="block-20" style="background-image: url('images/image_3.jpg');" onclick="showFullBlog(3)">
             </a>
             <div class="text p-4 float-right d-block">
               <div class="topper d-flex align-items-center">
@@ -136,7 +137,7 @@
                 </div>
               </div>
               <p>Discover how intellectual property laws protect your innovations.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
+              <p><a href="#" class="btn btn-primary" onclick="showFullBlog(3)">Read more</a></p>
             </div>
           </div>
         </div>
@@ -145,9 +146,9 @@
         <div class="col-md-4 d-flex ftco-animate">
           <div class="blog-entry justify-content-end">
             <div class="text px-4 py-4">
-              <h3 class="heading mb-0"><a href="#">Best Practices in Employment Law</a></h3>
+              <h3 class="heading mb-0"><a href="#" onclick="showFullBlog(4)">Best Practices in Employment Law</a></h3>
             </div>
-            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
+            <a href="#" class="block-20" style="background-image: url('images/image_4.jpg');" onclick="showFullBlog(4)">
             </a>
             <div class="text p-4 float-right d-block">
               <div class="topper d-flex align-items-center">
@@ -160,55 +161,99 @@
                 </div>
               </div>
               <p>Gain insights into compliance and dispute resolution in the workplace.</p>
-              <p><a href="#" class="btn btn-primary">Read more</a></p>
+              <p><a href="#" class="btn btn-primary" onclick="showFullBlog(4)">Read more</a></p>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
 
-    <!-- Additional blog entries were updated similarly -->
-    </div>
-    <div class="row mt-5">
-      <div class="col text-center">
-        <div class="block-27">
-          <ul>
-            <li><a href="#">&lt;</a></li>
-            <li class="active"><span>1</span></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">&gt;</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
-    <div class="container">
-      <div class="row d-flex justify-content-end">
-        <div class="col-md-8 py-4 px-md-4 bg-primary">
-          <div class="row">
-            <div class="col-md-6 ftco-animate d-flex align-items-center">
-              <h2 class="mb-0" style="color:white; font-size: 24px;">Subscribe to Our Newsletter</h2>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-              <form action="#" class="subscribe-form">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control" placeholder="Enter your email">
-                  <input type="submit" value="Subscribe" class="submit px-3">
-                </div>
-              </form>
-            </div>
+      <!-- Full Blog Content -->
+      <div class="row mt-5" id="blog-content" style="display: none;">
+        <div class="col-md-12">
+          <div class="bg-dark text-white p-4" style="border-radius: 5px;">
+            <h2 id="full-blog-title" style="color: yellow;"></h2>
+            <p id="full-blog-content" style="color: white; text-align: justify;"></p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <script>
+    const blogs = {
+      1: {
+        title: "Key Insights into Industrial Laws",
+        content: `Industrial laws serve as the foundation for regulating workplace practices and ensuring fair treatment 
+         of employees. These laws set the standards for safety, health, and welfare in industries, which are critical 
+         for fostering an ethical and productive work environment. They encompass rules regarding working hours, 
+         wages, grievance redressal mechanisms, and labor rights. Proper compliance helps organizations minimize 
+         workplace disputes and penalties while boosting employee satisfaction and productivity. With globalization 
+         and evolving business practices, understanding industrial laws is crucial for companies aiming to maintain 
+         a competitive edge.`
+      },
+      2: {
+        title: "Navigating Corporate Litigation",
+        content: `Corporate litigation involves resolving disputes related to business operations, ranging from 
+         contract breaches to shareholder issues. This complex field of law requires companies to adopt robust 
+         strategies to minimize risks and legal exposure. Legal experts play a pivotal role in guiding businesses 
+         through the intricacies of litigation, offering tailored solutions to protect their interests. Key focus 
+         areas include alternative dispute resolution mechanisms, compliance audits, and risk management plans. 
+         Investing in a proactive legal strategy is essential for maintaining corporate stability and reputation.`
+      },
+      3: {
+        title: "Understanding Intellectual Property Rights",
+        content: `In today's innovation-driven world, intellectual property (IP) is a valuable asset for businesses 
+         and individuals alike. IP rights protect creations such as inventions, trademarks, and artistic works, 
+         enabling their creators to maintain exclusive rights and monetize their innovations. Failing to secure IP 
+         can lead to unauthorized use and financial losses. Organizations must stay updated with IP laws, especially 
+         in global markets where infringement risks are higher. Our experts provide comprehensive IP management 
+         solutions to safeguard your creations and enhance business value.`
+      },
+      4: {
+        title: "Best Practices in Employment Law",
+        content: `Employment law is a vital area of legal practice that governs the relationship between employers 
+      and employees. It covers issues such as hiring practices, workplace policies, employee benefits, and 
+      termination procedures. Adopting best practices in employment law ensures compliance with regulations, 
+      reduces the likelihood of disputes, and fosters a positive work environment.
+
+      For employers, understanding these laws means creating fair contracts, promoting diversity, and avoiding 
+      discriminatory practices. Regular training on workplace ethics and legal obligations can prevent harassment 
+      or bias, contributing to employee satisfaction and retention. For employees, knowing your rights ensures 
+      protection against unfair treatment and allows you to seek remedies in case of grievances.
+
+      In today's dynamic workplace, evolving trends such as remote work, gig economy roles, and technological 
+      advancements have introduced new legal challenges. Employers must update policies to address these 
+      developments while maintaining compliance with local and international laws.
+
+      Legal experts recommend conducting periodic audits of employment practices, offering transparent 
+      communication channels for employees, and fostering a culture of mutual respect. Proactively managing 
+      employment law matters can save businesses from costly litigation and reputational damage while ensuring 
+      a harmonious workplace. Whether you are an employer or an employee, staying informed about employment law 
+      is essential for navigating the complexities of the modern work environment.`
+      }
+
+    };
+
+    function showFullBlog(id) {
+      const blogTitle = document.getElementById("full-blog-title");
+      const blogContent = document.getElementById("full-blog-content");
+      const blogContentSection = document.getElementById("blog-content");
+
+      // Set the hero section title
+      document.getElementById("blog-title").textContent = blogs[id].title;
+
+      // Set the full blog content
+      blogTitle.textContent = blogs[id].title;
+      blogContent.textContent = blogs[id].content;
+
+      // Show the blog content section
+      blogContentSection.style.display = "block";
+
+      // Scroll to the content
+      blogContentSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
 
 
   <!-- START: Footer Section -->
@@ -218,13 +263,13 @@
         <!-- Logo and Description -->
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="logo"><a href="#">Legalcare <span>A Law Firm Agency</span></a></h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts.</p>
+            <h2 class="logo"><a href="#">BansalLawyers <span>A Law Firm Agency</span></a></h2>
+            <p>Professional legal services provided with expertise and care in Melbourne and beyond.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left mt-5">
-              <li class="ftco-animate"><a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#" aria-label="Facebook"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61562008576642"
+                  aria-label="Facebook"><span class="icon-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="https://www.instagram.com/bansallawyers?igsh=N21ubnVkeDhibjVw"
+                  aria-label="Instagram"><span class="icon-instagram"></span></a></li>
             </ul>
           </div>
         </div>
@@ -234,18 +279,22 @@
           <div class="ftco-footer-widget mb-4 ml-md-5">
             <h2 class="ftco-heading-2">Practice Areas</h2>
             <ul class="list-unstyled">
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Employment Law</a>
-              </li>
-              <li><a href="#" class="py-1 d-block"><span class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Employment Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
             </ul>
           </div>
         </div>
@@ -256,12 +305,12 @@
             <h2 class="ftco-heading-2">Have a Question?</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San
-                    Francisco, California, USA</span></li>
-                <li><a href="tel:+23923929210"><span class="icon icon-phone"></span><span class="text">+2 392 3929
-                      210</span></a></li>
-                <li><a href="mailto:info@yourdomain.com"><span class="icon icon-envelope"></span><span
-                      class="text">info@yourdomain.com</span></a></li>
+                <li><span class="icon icon-map-marker"></span><span class="text">Level 8/278 Collins St, Melbourne VIC
+                    3000, Australia</span></li>
+                <li><a href="tel:000000000"><span class="icon icon-phone"></span><span class="text">000000000</span></a>
+                </li>
+                <li><a href="mailto:Info@bansallawyers.com.au"><span class="icon icon-envelope"></span><span
+                      class="text">Info@bansallawyers.com.au</span></a></li>
               </ul>
             </div>
           </div>
@@ -291,15 +340,14 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <p>&copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | Bansal Lawyers <i
-              class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">Colorlib</a>
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Bansal Lawyers
           </p>
         </div>
       </div>
     </div>
   </footer>
   <!-- END: Footer Section -->
+
 
   <!-- START: Loader -->
   <div id="ftco-loader" class="show fullscreen">
