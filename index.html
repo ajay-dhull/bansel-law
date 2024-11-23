@@ -489,8 +489,6 @@
 
 
 
-
-
     <!-- START: Free Consultation Section -->
     <section class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img"
         style="background-image: url(images/bg_2.jpg);">
@@ -502,29 +500,31 @@
                     <h2 class="mb-4">Get Expert Legal Advice</h2>
                     <p>Take the first step towards resolving your legal concerns. Our experienced attorneys are here to
                         assist you with personalized advice and guidance.</p>
-                    <form action="#" class="consultation">
+                    <form action="mailto:info@bansallawyers.com.au" method="POST" enctype="text/plain"
+                        class="consultation">
                         <!-- Name Input -->
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Full Name" required>
+                            <input type="text" class="form-control" name="name" placeholder="Your Full Name" required>
                         </div>
                         <!-- Email Input -->
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email Address" required>
+                            <input type="email" class="form-control" name="email" placeholder="Your Email Address"
+                                required>
                         </div>
-                        <!-- Subject Dropdown -->
+                        <!-- Legal Concern Dropdown -->
                         <div class="form-group">
-                            <select class="form-control" required>
+                            <select class="form-control" name="concern" required>
                                 <option value="" disabled selected>Choose Your Legal Concern</option>
-                                <option value="family-law">Family Law</option>
-                                <option value="business-law">Business Law</option>
-                                <option value="criminal-defense">Criminal Defense</option>
-                                <option value="estate-planning">Estate Planning</option>
-                                <option value="other">Other</option>
+                                <option value="family-law" style="color: blue;">Family Law</option>
+                                <option value="business-law" style="color: blue;">Business Law</option>
+                                <option value="criminal-defense" style="color: blue;">Criminal Defense</option>
+                                <option value="estate-planning" style="color: blue;">Estate Planning</option>
+                                <option value="other" style="color: blue;">Other</option>
                             </select>
                         </div>
                         <!-- Message Input -->
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="5" class="form-control"
+                            <textarea name="message" id="message" cols="30" rows="5" class="form-control"
                                 placeholder="Briefly Describe Your Case" required></textarea>
                         </div>
                         <!-- Submit Button -->
@@ -537,6 +537,7 @@
         </div>
     </section>
     <!-- END: Free Consultation Section -->
+
 
 
 
@@ -674,9 +675,9 @@
                             <h3 class="heading"><a href="blog-single.html">Understanding Industrial Laws: Key
                                     Insights</a></h3>
                             <div class="meta">
-                                <span class="day">15</span>
-                                <span class="mos">November</span>
-                                <span class="yr">2024</span>
+                                <span class="day" style="color: black;">15</span>
+                                <span class="mos" style="color: black;">November</span>
+                                <span class="yr" style="color: black;">2024</span>
                             </div>
                             <p>Explore the essential aspects of industrial laws and how they impact businesses in
                                 today's economy.</p>
@@ -693,9 +694,9 @@
                         <div class="text p-4">
                             <h3 class="heading"><a href="blog-single.html">Top Legal Tips for Startups</a></h3>
                             <div class="meta">
-                                <span class="day">12</span>
-                                <span class="mos">November</span>
-                                <span class="yr">2024</span>
+                                <span class="day" style="color: black;">12</span>
+                                <span class="mos" style="color: black;">November</span>
+                                <span class="yr" style="color: black;">2024</span>
                             </div>
                             <p>Discover legal strategies that every startup should know to avoid pitfalls and ensure
                                 growth.</p>
@@ -712,9 +713,9 @@
                         <div class="text p-4">
                             <h3 class="heading"><a href="blog-single.html">Navigating Corporate Tax Laws</a></h3>
                             <div class="meta">
-                                <span class="day">10</span>
-                                <span class="mos">November</span>
-                                <span class="yr">2024</span>
+                                <span class="day" style="color: black;">10</span>
+                                <span class="mos" style="color: black;">November</span>
+                                <span class="yr" style="color: black;">2024</span>
                             </div>
                             <p>Learn how to effectively manage corporate tax obligations and stay compliant with new
                                 regulations.</p>
@@ -782,8 +783,8 @@
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">Level 8/278 Collins St,
                                         Melbourne VIC 3000, Australia</span></li>
-                                <li><a href="tel:000000000"><span class="icon icon-phone"></span><span
-                                            class="text">000000000</span></a></li>
+                                <li><a href="tel:(+61) 0422905860"><span class="icon icon-phone"></span><span
+                                            class="text">(+61) 0422905860</span></a></li>
                                 <li><a href="mailto:Info@bansallawyers.com.au"><span
                                             class="icon icon-envelope"></span><span
                                             class="text">Info@bansallawyers.com.au</span></a></li>
