@@ -83,7 +83,7 @@
     </nav>
 
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/coart\ 1.jpg');"
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/coart 1.jpg');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
@@ -91,13 +91,13 @@
                 data-scrollax-parent="true">
                 <div class="col-md-8 ftco-animate">
                     <h2 class="subheading animated-typing" id="welcome-text"></h2>
-                    <h1 class="mb-4" style="font-size: 3.5rem; font-weight: 700; line-height: 1.2;">
+                    <h1 class="mb-4 rotating-text">
                         There's No Legal Puzzle,<br>
-                        <span class="rotating-text">We Can't Solve.</span>
+                        <span class="dynamic-text">We Can't Solve.</span>
                     </h1>
-                    <p class="mb-4" style="font-size: 1.2rem;">
-                        With a proven track record of success, we provide expert legal representation to
-                        safeguard your rights, freedom, and future. Trust Bansal Lawyers to stand by your side.
+                    <p class="mb-4">
+                        With a proven track record of success, we provide expert legal representation to safeguard your
+                        rights, freedom, and future. Trust Bansal Lawyers to stand by your side.
                     </p>
                     <p>
                         <a href="contact.html" class="btn btn-primary mr-md-4 py-2 px-4">Schedule Your Consultation
@@ -109,7 +109,129 @@
         </div>
     </div>
 
+
     <style>
+        /* Hero Section Styles */
+        .hero-wrap {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .hero-wrap .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .slider-text {
+            text-align: left;
+            color: #fff;
+        }
+
+        .slider-text h1 {
+            font-size: 3rem;
+            /* Default size for large screens */
+            font-weight: 700;
+            line-height: 1.3;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 1199.98px) {
+            .slider-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .slider-text h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slider-text h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .slider-text h1 {
+                font-size: 1.25rem;
+            }
+        }
+
+        .slider-text .subheading {
+            font-size: 1.25rem;
+            /* Default size for large screens */
+            font-weight: 800;
+            color: #1d9fff;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 768px) {
+            .slider-text .subheading {
+                font-size: 1rem;
+            }
+        }
+
+        .dynamic-text {
+            display: inline-block;
+            animation: rotateText 3s linear infinite, colorChange 10s linear infinite;
+        }
+
+        @keyframes rotateText {
+
+            0%,
+            10% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            20%,
+            80% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            90%,
+            100% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #ff4757;
+            }
+
+            25% {
+                color: #ffa502;
+            }
+
+            50% {
+                color: #2ed573;
+            }
+
+            75% {
+                color: #1e90ff;
+            }
+
+            100% {
+                color: #ff4757;
+            }
+        }
+
+
+
         /* Rotating Text Effect with Color Change */
         .rotating-text {
             display: inline-block;
@@ -161,7 +283,7 @@
 
         /* Smooth Typing Animation */
         .animated-typing {
-            font-size: 2rem;
+            font-size: 2%;
             font-weight: 600;
             color: #fff;
             display: inline-block;
