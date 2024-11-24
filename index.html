@@ -39,18 +39,38 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="attorneys.html" class="nav-link">Attorneys</a></li>
-                    <li class="nav-item"><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
-                    <li class="nav-item"><a href="case.html" class="nav-link">Case Studies</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
+                    <li class="nav-item active"><a href="index.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">About</a></li>
+                    <li class="nav-item"><a href="attorneys.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Attorneys</a></li>
+                    <li class="nav-item"><a href="practice-areas.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Practice Areas</a>
+                    </li>
+                    <li class="nav-item"><a href="case.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Case Studies</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Contact</a></li>
+                    <li class="nav-item cta"><a href="contact.html" class="nav-link"
+                            style="color: white; font-weight: normal;"
+                            onmouseover="this.style.fontWeight='normal'; this.style.color='white'"
+                            onmouseout="this.style.fontWeight='normal'; this.style.color='white'">Free Consultation</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <div class="hero-wrap js-fullheight" style="background-image: url('images/coart\ 1.jpg');"
         data-stellar-background-ratio="0.5">
@@ -59,7 +79,7 @@
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
                 data-scrollax-parent="true">
                 <div class="col-md-8 ftco-animate">
-                    <h2 class="subheading">Welcome To Bansal Lawyers</h2>
+                    <h2 class="subheading animated-typing" id="welcome-text"></h2>
                     <h1 class="mb-4" style="font-size: 3.5rem; font-weight: 700; line-height: 1.2;">
                         There's No Legal Puzzle,<br>
                         <span class="rotating-text">We Can't Solve.</span>
@@ -69,7 +89,7 @@
                         safeguard your rights, freedom, and future. Trust Bansal Lawyers to stand by your side.
                     </p>
                     <p>
-                        <a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Schedule Your Consultation
+                        <a href="contact.html" class="btn btn-primary mr-md-4 py-2 px-4">Schedule Your Consultation
                             <span class="ion-ios-arrow-forward"></span>
                         </a>
                     </p>
@@ -109,30 +129,77 @@
         @keyframes colorChange {
             0% {
                 color: #ff4757;
-                /* Red */
             }
 
             25% {
                 color: #ffa502;
-                /* Orange */
             }
 
             50% {
                 color: #2ed573;
-                /* Green */
             }
 
             75% {
                 color: #1e90ff;
-                /* Blue */
             }
 
             100% {
                 color: #ff4757;
-                /* Back to Red */
+            }
+        }
+
+        /* Smooth Typing Animation */
+        .animated-typing {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #fff;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingSmooth 3s steps(20, end), fadeText 3s ease-in-out;
+        }
+
+        @keyframes typingSmooth {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeText {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const text = "Welcome To Bansal Lawyers";
+            const element = document.getElementById("welcome-text");
+
+            // Set the full text and allow CSS animation to handle it
+            element.textContent = text;
+
+            // Add a class to trigger the animation (if needed dynamically)
+            element.classList.add('animated-typing');
+        });
+    </script>
+
+
 
 
     <!-- START: Services Section -->
@@ -225,7 +292,7 @@
                 <div class="col-md-6 d-flex">
                     <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
                         style="background-image:url(images/Ajay-Basal.jpeg);">
-                        <a href="https://vimeo.com/45830194"
+                        <a href="https://youtu.be/oFv5aJ1hnUU?si=mGsqU3_OomSvVs6Z"
                             class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                             <span class="icon-play"></span>
                         </a>
@@ -282,14 +349,13 @@
                                 <!-- END: Tab Content -->
                             </div>
 
-                            <!-- START: Experience Section -->
                             <div class="years d-flex mt-4 mt-md-5">
                                 <h4>
-                                    <span class="number mr-2" data-number="40">0</span>
-                                    <span>Years of Experience</span>
+                                    <span>Your Trusted Legal Partner</span>
                                 </h4>
                             </div>
-                            <!-- END: Experience Section -->
+
+
                         </div>
                     </div>
                 </div>
@@ -487,62 +553,6 @@
     <!-- END: Attorneys Section -->
 
 
-
-
-    <!-- START: Free Consultation Section -->
-    <section class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img"
-        style="background-image: url(images/bg_2.jpg);">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row d-md-flex justify-content-end">
-                <div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
-                    <span class="subheading">Schedule Your Consultation</span>
-                    <h2 class="mb-4">Get Expert Legal Advice</h2>
-                    <p>Take the first step towards resolving your legal concerns. Our experienced attorneys are here to
-                        assist you with personalized advice and guidance.</p>
-                    <form action="mailto:info@bansallawyers.com.au" method="POST" enctype="text/plain"
-                        class="consultation">
-                        <!-- Name Input -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="Your Full Name" required>
-                        </div>
-                        <!-- Email Input -->
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email Address"
-                                required>
-                        </div>
-                        <!-- Legal Concern Dropdown -->
-                        <div class="form-group">
-                            <select class="form-control" name="concern" required>
-                                <option value="" disabled selected>Choose Your Legal Concern</option>
-                                <option value="family-law" style="color: blue;">Family Law</option>
-                                <option value="business-law" style="color: blue;">Business Law</option>
-                                <option value="criminal-defense" style="color: blue;">Criminal Defense</option>
-                                <option value="estate-planning" style="color: blue;">Estate Planning</option>
-                                <option value="other" style="color: blue;">Other</option>
-                            </select>
-                        </div>
-                        <!-- Message Input -->
-                        <div class="form-group">
-                            <textarea name="message" id="message" cols="30" rows="5" class="form-control"
-                                placeholder="Briefly Describe Your Case" required></textarea>
-                        </div>
-                        <!-- Submit Button -->
-                        <div class="form-group">
-                            <input type="submit" value="Request Consultation" class="btn btn-dark py-3 px-4">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END: Free Consultation Section -->
-
-
-
-
-
-
     <!-- START: Testimonial Section -->
     <section class="ftco-section testimony-section">
         <div class="container">
@@ -563,14 +573,12 @@
                         <div class="item">
                             <div class="testimony-wrap py-4 px-3">
                                 <div class="text">
-                                    <p class="mb-4">"I was impressed by the professionalism and dedication of the team.
-                                        They provided exceptional legal advice and supported me every step of the way."
-                                    </p>
+                                    <p class="mb-4">"They provided excellent support and handled everything with
+                                        professionalism."</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="user-img user-circle">A</div>
                                         <div class="pl-3">
-                                            <p class="name">Jessica Brown</p>
-                                            <span class="position">Business Owner</span>
+                                            <p class="name">Ajay Dhull</p>
                                         </div>
                                     </div>
                                 </div>
@@ -580,13 +588,12 @@
                         <div class="item">
                             <div class="testimony-wrap py-4 px-3">
                                 <div class="text">
-                                    <p class="mb-4">"The attorneys were knowledgeable, approachable, and genuinely cared
-                                        about my case. I couldn't have asked for better representation."</p>
+                                    <p class="mb-4">"Excellent service. They guide you in every step and handle matters
+                                        professionally."</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="user-img user-circle">T</div>
                                         <div class="pl-3">
-                                            <p class="name">Michael Johnson</p>
-                                            <span class="position">Startup Founder</span>
+                                            <p class="name">Triza Pandey</p>
                                         </div>
                                     </div>
                                 </div>
@@ -596,13 +603,12 @@
                         <div class="item">
                             <div class="testimony-wrap py-4 px-3">
                                 <div class="text">
-                                    <p class="mb-4">"Thanks to their guidance, I was able to resolve my legal issue
-                                        quickly and efficiently. Highly recommend their services!"</p>
+                                    <p class="mb-4">"Thanks to their guidance, I resolved everything quickly and without
+                                        any issues."</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                                        <div class="user-img user-circle">H</div>
                                         <div class="pl-3">
-                                            <p class="name">Sophia Williams</p>
-                                            <span class="position">HR Manager</span>
+                                            <p class="name">Harmeet Singh</p>
                                         </div>
                                     </div>
                                 </div>
@@ -612,13 +618,12 @@
                         <div class="item">
                             <div class="testimony-wrap py-4 px-3">
                                 <div class="text">
-                                    <p class="mb-4">"Professional and compassionate service from start to finish. I felt
-                                        valued and supported throughout my case."</p>
+                                    <p class="mb-4">"They were professional, helpful, and made a complex process easy to
+                                        handle."</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_4.jpg)"></div>
+                                        <div class="user-img user-circle">A</div>
                                         <div class="pl-3">
-                                            <p class="name">David Wilson</p>
-                                            <span class="position">Marketing Director</span>
+                                            <p class="name">Ankit</p>
                                         </div>
                                     </div>
                                 </div>
@@ -628,13 +633,12 @@
                         <div class="item">
                             <div class="testimony-wrap py-4 px-3">
                                 <div class="text">
-                                    <p class="mb-4">"They made a complex legal process easy to understand and navigate.
-                                        I'm grateful for their hard work and expertise."</p>
+                                    <p class="mb-4">"Their expertise and guidance helped me feel confident at every
+                                        step. Excellent service"</p>
                                     <div class="d-flex align-items-center">
-                                        <div class="user-img" style="background-image: url(images/person_5.jpg)"></div>
+                                        <div class="user-img user-circle">D</div>
                                         <div class="pl-3">
-                                            <p class="name">Emily Davis</p>
-                                            <span class="position">Freelance Consultant</span>
+                                            <p class="name">Deepak</p>
                                         </div>
                                     </div>
                                 </div>
@@ -646,6 +650,24 @@
         </div>
     </section>
     <!-- END: Testimonial Section -->
+
+    <!-- CSS to style the initials in a circle -->
+    <style>
+        .user-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+
 
 
 
@@ -738,14 +760,29 @@
                 <!-- Logo and Description -->
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="logo"><a href="#">BansalLawyers <span>A Law Firm Agency</span></a></h2>
+                        <h2 class="logo" style="color: white; pointer-events: none;">
+                            <a href="#" style="color: white; pointer-events: none;">
+                                BansalLawyers <span>A Law Firm Agency</span>
+                            </a>
+                        </h2>
                         <p>Professional legal services provided with expertise and care in Melbourne and beyond.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left mt-5">
-                            <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61562008576642"
-                                    aria-label="Facebook"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a
-                                    href="https://www.instagram.com/bansallawyers?igsh=N21ubnVkeDhibjVw"
-                                    aria-label="Instagram"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate">
+                                <a href="https://www.facebook.com/profile.php?id=61562008576642" aria-label="Facebook"
+                                    style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="https://www.instagram.com/bansallawyers?igsh=N21ubnVkeDhibjVw"
+                                    aria-label="Instagram" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -755,21 +792,37 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="ftco-heading-2">Practice Areas</h2>
                         <ul class="list-unstyled">
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Employment Law</a></li>
-                            <li><a href="practice-areas.html" class="py-1 d-block"><span
+                            <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                                    onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                                    onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
                                         class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
                         </ul>
                     </div>
@@ -781,13 +834,27 @@
                         <h2 class="ftco-heading-2">Have a Question?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Level 8/278 Collins St,
-                                        Melbourne VIC 3000, Australia</span></li>
-                                <li><a href="tel:(+61) 0422905860"><span class="icon icon-phone"></span><span
-                                            class="text">(+61) 0422905860</span></a></li>
-                                <li><a href="mailto:Info@bansallawyers.com.au"><span
-                                            class="icon icon-envelope"></span><span
-                                            class="text">Info@bansallawyers.com.au</span></a></li>
+                                <!-- Address with pointer-events disabled -->
+                                <li style="pointer-events: none;">
+                                    <span class="icon icon-map-marker" style="color: white;"></span>
+                                    <span class="text" style="color: white;">Level 8/278 Collins St, Melbourne VIC 3000,
+                                        Australia</span>
+                                </li>
+                                <!-- Phone number with pointer-events disabled -->
+                                <li style="pointer-events: none;">
+                                    <a href="tel:(+61) 0422905860" style="color: white; text-decoration: none;">
+                                        <span class="icon icon-phone"></span>
+                                        <span class="text">(+61) 0422905860</span>
+                                    </a>
+                                </li>
+                                <!-- Email address with pointer-events disabled -->
+                                <li style="pointer-events: none;">
+                                    <a href="mailto:info@bansallawyers.com.au"
+                                        style="color: white; text-decoration: none;">
+                                        <span class="icon icon-envelope"></span>
+                                        <span class="text">info@bansallawyers.com.au</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -816,13 +883,16 @@
             <!-- Copyright Notice -->
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>&copy;
+                    <p style="color: white;">
+                        &copy;
                         <script>document.write(new Date().getFullYear());</script> All rights reserved | Bansal Lawyers
                     </p>
                 </div>
             </div>
         </div>
     </footer>
+
+
     <!-- END: Footer Section -->
 
     <!-- START: Loader -->

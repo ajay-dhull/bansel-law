@@ -42,18 +42,36 @@
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="attorneys.html" class="nav-link">Attorneys</a></li>
-          <li class="nav-item"><a href="practice-areas.html" class="nav-link">Practice Areas</a></li>
-          <li class="nav-item"><a href="case.html" class="nav-link">Case Studies</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item cta"><a href="#" class="nav-link">Free Consultation</a></li>
+          <li class="nav-item active"><a href="index.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">About</a></li>
+          <li class="nav-item"><a href="attorneys.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Attorneys</a></li>
+          <li class="nav-item"><a href="practice-areas.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Practice Areas</a></li>
+          <li class="nav-item"><a href="case.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Case Studies</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;"
+              onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+              onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Contact</a></li>
+          <li class="nav-item cta"><a href="contact.html" class="nav-link" style="color: white; font-weight: normal;"
+              onmouseover="this.style.fontWeight='normal'; this.style.color='white'"
+              onmouseout="this.style.fontWeight='normal'; this.style.color='white'">Free Consultation</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+
   <!-- END nav -->
   <section class="hero-wrap hero-wrap-2"
     style="background-image: url('images/girl-having-online-class-her-tablet.jpg');"
@@ -86,13 +104,13 @@
           <p><span>Phone:</span> <a href="tel://(+61) 0422905860">(+61) 0422905860</a></p>
         </div>
         <div class="col-md-3">
-          <p><span>Email:</span> <a href="mailto:info@bansallawyers.com.au">bansallawyers.com.au</a></p>
+          <p><span>Email:</span> <a href="mailto:info@bansallawyers.com.au">info@bansallawyers.com.au</a></p>
         </div>
         <div class="col-md-3">
           <p><span>Website:</span> <a href="#">bansallawyers.com.au</a></p>
         </div>
       </div>
-
+  
       <div class="row block-9 no-gutters">
         <div class="col-lg-6 order-md-last d-flex">
           <!-- Form modified to use mailto: -->
@@ -116,14 +134,17 @@
             </div>
           </form>
         </div>
-
+  
+        <!-- Embed Google Map -->
         <div class="col-lg-6 d-flex">
-          <div id="map" class="bg-white" style="height: 100%;"></div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.645409146537!2d144.9631536153164!3d-37.81664617975151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43c60387b1%3A0xd9be68c8b39a6074!2sLevel%208%2F278%20Collins%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1696731567597!5m2!1sen!2sus"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </section>
-
+  
 
   <!-- START: Footer Section -->
   <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -132,18 +153,71 @@
         <!-- Logo and Description -->
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="logo"><a href="#">BansalLawyers <span>A Law Firm Agency</span></a></h2>
+            <h2 class="logo" style="color: white; pointer-events: none;">
+              <a href="#" style="color: white; pointer-events: none;">
+                BansalLawyers <span>A Law Firm Agency</span>
+              </a>
+            </h2>
             <p>Professional legal services provided with expertise and care in Melbourne and beyond.</p>
             <ul class="ftco-footer-social list-unstyled float-md-left mt-5">
-              <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=61562008576642"
-                  aria-label="Facebook"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="https://www.instagram.com/bansallawyers?igsh=N21ubnVkeDhibjVw"
-                  aria-label="Instagram"><span class="icon-instagram"></span></a></li>
+              <li class="ftco-animate">
+                <a href="https://www.facebook.com/profile.php?id=61562008576642" aria-label="Facebook"
+                  style="color: white;" onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://www.instagram.com/bansallawyers?igsh=N21ubnVkeDhibjVw" aria-label="Instagram"
+                  style="color: white;" onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'">
+                  <span class="icon-instagram"></span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-
+        <!-- Practice Areas Links -->
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-5">
+            <h2 class="ftco-heading-2">Practice Areas</h2>
+            <ul class="list-unstyled">
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Family Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Business Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Insurance Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Criminal Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Drug Offenses</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Fire Accident</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Employment Law</a></li>
+              <li><a href="practice-areas.html" class="py-1 d-block" style="color: white;"
+                  onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                  onmouseout="this.style.color='white'; this.style.fontWeight='normal'"><span
+                    class="ion-ios-arrow-forward mr-3"></span>Property Law</a></li>
+            </ul>
+          </div>
+        </div>
 
         <!-- Contact Information -->
         <div class="col-md">
@@ -151,13 +225,26 @@
             <h2 class="ftco-heading-2">Have a Question?</h2>
             <div class="block-23 mb-3">
               <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">Level 8/278 Collins St, Melbourne VIC
-                    3000, Australia</span></li>
-                <li><a href="tel:(+61) 0422905860"><span class="icon icon-phone"></span><span class="text">(+61)
-                      0422905860</span></a>
+                <!-- Address with pointer-events disabled -->
+                <li style="pointer-events: none;">
+                  <span class="icon icon-map-marker" style="color: white;"></span>
+                  <span class="text" style="color: white;">Level 8/278 Collins St, Melbourne VIC 3000,
+                    Australia</span>
                 </li>
-                <li><a href="mailto:Info@bansallawyers.com.au"><span class="icon icon-envelope"></span><span
-                      class="text">Info@bansallawyers.com.au</span></a></li>
+                <!-- Phone number with pointer-events disabled -->
+                <li style="pointer-events: none;">
+                  <a href="tel:(+61) 0422905860" style="color: white; text-decoration: none;">
+                    <span class="icon icon-phone"></span>
+                    <span class="text">(+61) 0422905860</span>
+                  </a>
+                </li>
+                <!-- Email address with pointer-events disabled -->
+                <li style="pointer-events: none;">
+                  <a href="mailto:info@bansallawyers.com.au" style="color: white; text-decoration: none;">
+                    <span class="icon icon-envelope"></span>
+                    <span class="text">info@bansallawyers.com.au</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -186,15 +273,17 @@
       <!-- Copyright Notice -->
       <div class="row">
         <div class="col-md-12 text-center">
-          <p>&copy;
+          <p style="color: white;">
+            &copy;
             <script>document.write(new Date().getFullYear());</script> All rights reserved | Bansal Lawyers
           </p>
         </div>
       </div>
     </div>
   </footer>
-  <!-- END: Footer Section -->
 
+
+  <!-- END: Footer Section -->
 
   <!-- START: Loader -->
   <div id="ftco-loader" class="show fullscreen">
