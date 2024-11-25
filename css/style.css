@@ -1,9 +1,308 @@
-/*!
- * Bootstrap v4.2.1 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+/* Hero Section Styles */
+.hero-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-text {
+  text-align: left;
+  color: #fff;
+}
+
+.slider-text h1 {
+  font-size: 3rem;
+  /* Default size for large screens */
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .slider-text h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .slider-text h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-text h1 {
+    font-size: 1.25rem;
+  }
+}
+
+.slider-text .subheading {
+  font-size: 1.25rem;
+  /* Default size for large screens */
+  font-weight: 800;
+  color: #1d9fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .slider-text .subheading {
+    font-size: 1rem;
+  }
+}
+
+.dynamic-text {
+  display: inline-block;
+  animation: rotateText 3s linear infinite, colorChange 10s linear infinite;
+}
+
+@keyframes rotateText {
+
+  0%,
+  10% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  90%,
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff4757;
+  }
+
+  25% {
+    color: #ffa502;
+  }
+
+  50% {
+    color: #2ed573;
+  }
+
+  75% {
+    color: #1e90ff;
+  }
+
+  100% {
+    color: #ff4757;
+  }
+}
+
+
+
+/* Rotating Text Effect with Color Change */
+.rotating-text {
+  display: inline-block;
+  animation: rotateText 3s linear infinite, colorChange 10s linear infinite;
+}
+
+@keyframes rotateText {
+
+  0%,
+  10% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  90%,
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff4757;
+  }
+
+  25% {
+    color: #ffa502;
+  }
+
+  50% {
+    color: #2ed573;
+  }
+
+  75% {
+    color: #1e90ff;
+  }
+
+  100% {
+    color: #ff4757;
+  }
+}
+
+/* Smooth Typing Animation */
+.animated-typing {
+  font-size: 2%;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingSmooth 3s steps(20, end), fadeText 3s ease-in-out;
+}
+
+@keyframes typingSmooth {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* Modal styles */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Black with transparency */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -3px;
+  right: -1px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #01579B;
+  cursor: pointer;
+}
+
+
+
+
+.user-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* about . html*/
+
+/* Modal styles */
+.modal {
+ display: none;
+ /* Hidden by default */
+ position: fixed;
+ z-index: 9999;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ overflow: auto;
+ background-color: rgba(0, 0, 0, 0.7);
+ /* Black with transparency */
+}
+
+.modal-content {
+ background-color: #fff;
+ margin: 10% auto;
+ padding: 20px;
+ border-radius: 8px;
+ max-width: 800px;
+ position: relative;
+}
+
+.close {
+ position: absolute;
+ top: -3px;
+ right: -1px;
+ font-size: 36px;
+ font-weight: bold;
+ color: #01579B;
+ cursor: pointer;
+}
+
+
+
+
 :root {
   --blue: #002247;
   --indigo: #6610f2;

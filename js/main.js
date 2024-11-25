@@ -375,4 +375,104 @@ window.onload = function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+	const text = "Welcome To Bansal Lawyers";
+	const element = document.getElementById("welcome-text");
+
+	// Set the full text and allow CSS animation to handle it
+	element.textContent = text;
+
+	// Add a class to trigger the animation (if needed dynamically)
+	element.classList.add('animated-typing');
+});
+
+
+function openVideoModal() {
+	var modal = document.getElementById("videoModal");
+	var iframe = document.getElementById("videoIframe");
+
+	// Set the YouTube video with autoplay parameter
+	iframe.src = "https://www.youtube.com/embed/oFv5aJ1hnUU?autoplay=1";
+
+	// Display the modal
+	modal.style.display = "block";
+}
+
+function closeVideoModal() {
+	var modal = document.getElementById("videoModal");
+	var iframe = document.getElementById("videoIframe");
+
+	// Reset the iframe src to stop the video
+	iframe.src = "";
+
+	// Hide the modal
+	modal.style.display = "none";
+}
+
+
+
+
+
+
+// case study script //
+
+const caseData = {
+	1: {
+	  title: "Corporate Legal Separation",
+	  content: `
+	  <h2 style="color: yellow;">Corporate Legal Separation</h2>
+	  <p style="color: white;">We helped a multinational company navigate a challenging corporate separation. Our expertise in corporate law ensured a smooth transition, protecting the interests of both parties and avoiding legal pitfalls. This case highlights our ability to deliver innovative solutions to complex legal challenges.</p>
+	`
+	},
+	2: {
+	  title: "Intellectual Property Protection",
+	  content: `
+	  <h2 style="color: yellow;">Intellectual Property Protection</h2>
+	  <p style="color: white;">Bansal Lawyers secured crucial trademarks and patents for a technology startup, protecting their innovations and market position. We provided end-to-end support, from filing applications to defending intellectual property in court, ensuring the client’s competitive advantage.</p>
+	`
+	},
+	3: {
+	  title: "Employment Law Dispute",
+	  content: `
+	  <h2 style="color: yellow;">Employment Law Dispute</h2>
+	  <p style="color: white;">Our team successfully resolved a labor dispute between a company and its former employee, avoiding lengthy litigation. By prioritizing mediation and negotiation, we achieved a fair settlement that upheld workplace policies and maintained harmony within the organization.</p>
+	`
+	},
+	4: {
+	  title: "Real Estate Transaction",
+	  content: `
+	  <h2 style="color: yellow;">Real Estate Transaction</h2>
+	  <p style="color: white;">We facilitated a large-scale real estate acquisition for a developer, ensuring compliance with regulatory requirements. Our detailed legal review and proactive advice minimized risks and secured favorable terms for the client, exemplifying our dedication to excellence in real estate law.</p>
+	`
+	},
+	5: {
+	  title: "Criminal Defense Victory",
+	  content: `
+	  <h2 style="color: yellow;">Criminal Defense Victory</h2>
+	  <p style="color: white;">Bansal Lawyers provided exceptional representation in a high-profile criminal case, achieving an acquittal for our client. Our strategic defense, thorough investigation, and in-depth knowledge of criminal law led to this landmark victory.</p>
+	`
+	},
+	6: {
+	  title: "Family Law Resolution",
+	  content: `
+	  <h2 style="color: yellow;">Family Law Resolution</h2>
+	  <p style="color: white;">In a sensitive family law case, we helped our client achieve a fair resolution in child custody and asset division. Our compassionate approach and legal expertise ensured the best outcome, maintaining our client’s dignity and protecting their future.</p>
+	`
+	}
+  };
+
+  function showCaseDetails(caseId) {
+	const descriptionSection = document.getElementById("case-description");
+	const detailsContainer = document.getElementById("case-details");
+
+	// Inject the content for the selected case
+	detailsContainer.innerHTML = caseData[caseId].content;
+
+	// Display the description section
+	descriptionSection.style.display = "block";
+
+	// Scroll to the description section
+	descriptionSection.scrollIntoView({ behavior: "smooth" });
+  }
+
 
