@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,109 +46,118 @@
         /* Content Section */
         .content-section {
             width: 100%;
-            max-width: 1200px; /* Increase the width */
+            max-width: 1200px;
             margin: 30px auto;
             background-color: #fff;
-            padding: 40px; /* Increase padding for more internal space */
+            padding: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center; /* Centering all content */
         }
 
         .content-section h1 {
             font-size: 3rem;
-            color: #1a73e8;
+            color: #002247;
+            /* Main heading color */
+            text-align: center;
+            /* Center-aligned heading */
             margin-bottom: 20px;
         }
 
         .content-section h2 {
             font-size: 2rem;
             color: #333;
+            /* Subheading color */
             margin-bottom: 15px;
+            text-align: left;
+            /* Align subheadings to the left */
         }
 
         .content-section p {
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 20px;
+            text-align: left;
+            /* Align paragraphs to the left */
+            color: #333;
+            /* Paragraph color */
         }
 
         .content-section ul {
             margin: 20px 0;
-            padding-left: 20px;
-            text-align: left; /* Align list items to the left */
+            padding-left: 40px;
+            /* Add space for the bullets */
         }
 
         .content-section ul li {
             list-style-type: disc;
             margin-bottom: 10px;
+            color: #002247;
+            /* Bullet point text color */
+            text-align: left;
+            /* Align bullet points to the left */
         }
 
         .content-section h3 {
             color: #333;
             margin-top: 20px;
             font-size: 1.5rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a73e8;
-            color: #fff;
+            text-align: left;
+            /* Align subheadings to the left */
         }
     </style>
+
 </head>
+
 <body>
 
     <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"
-				style="background: #fff; padding: 3px 5px; border-radius: 5px; margin-left: -10px;">
-				<img src="https://www.bansallawyers.com.au/images/logo/Bansal_Lawyers.png" alt="Bansal Lawyers Logo"
-					style="height: 50px; max-width: 100%; object-fit: contain;">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"
+                style="background: #fff; padding: 3px 5px; border-radius: 5px; margin-left: -10px;">
+                <img src="https://www.bansallawyers.com.au/images/logo/Bansal_Lawyers.png" alt="Bansal Lawyers Logo"
+                    style="height: 50px; max-width: 100%; object-fit: contain;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">About</a></li>
-					<li class="nav-item"><a href="attorneys.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Attorneys</a></li>
-					<li class="nav-item"><a href="practice-areas.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Practice Areas</a>
-					</li>
-					<li class="nav-item"><a href="case.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Case Studies</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Blog</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;"
-							onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
-							onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Contact</a></li>
-					<li class="nav-item cta"><a href="contact.html" class="nav-link"
-							style="color: white; font-weight: normal;"
-							onmouseover="this.style.fontWeight='normal'; this.style.color='white'"
-							onmouseout="this.style.fontWeight='normal'; this.style.color='white'">Free Consultation</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">About</a></li>
+                    <li class="nav-item"><a href="attorneys.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Attorneys</a></li>
+                    <li class="nav-item"><a href="practice-areas.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Practice Areas</a>
+                    </li>
+                    <li class="nav-item"><a href="case.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Case Studies</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;"
+                            onmouseover="this.style.color='red'; this.style.fontWeight='bold'"
+                            onmouseout="this.style.color='white'; this.style.fontWeight='normal'">Contact</a></li>
+                    <li class="nav-item cta"><a href="contact.html" class="nav-link"
+                            style="color: white; font-weight: normal;"
+                            onmouseover="this.style.fontWeight='normal'; this.style.color='white'"
+                            onmouseout="this.style.fontWeight='normal'; this.style.color='white'">Free Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-	<!-- END nav -->
+    <!-- END nav -->
 
     <!-- Content Section -->
     <div class="content-section">
@@ -156,38 +166,53 @@
 
         <h2>Personal Injury Law Services Across Australia</h2>
         <p>
-            Personal injury law in Australia is designed to provide compensation for individuals who have been injured due to the negligence or wrongful actions of others. Whether it’s a car accident, workplace injury, medical negligence, or a slip-and-fall incident, personal injury law ensures that victims have access to justice and the financial support they need to recover and move forward with their lives.
+            Personal injury law in Australia is designed to provide compensation for individuals who have been injured
+            due to the negligence or wrongful actions of others. Whether it’s a car accident, workplace injury, medical
+            negligence, or a slip-and-fall incident, personal injury law ensures that victims have access to justice and
+            the financial support they need to recover and move forward with their lives.
         </p>
 
         <h3>How We Can Help</h3>
         <p>
-            At Bansal Lawyers, our team of experienced personal injury lawyers is dedicated to helping you navigate the legal process. We offer expert advice, represent you in claims, and ensure that you receive the compensation you deserve. Our lawyers will work tirelessly to investigate the circumstances surrounding your injury, gather evidence, and negotiate with insurance companies or represent you in court if necessary.
+            At Bansal Lawyers, our team of experienced personal injury lawyers is dedicated to helping you navigate the
+            legal process. We offer expert advice, represent you in claims, and ensure that you receive the compensation
+            you deserve. Our lawyers will work tirelessly to investigate the circumstances surrounding your injury,
+            gather evidence, and negotiate with insurance companies or represent you in court if necessary.
         </p>
 
         <h3>Types of Personal Injury Claims</h3>
         <p>
-            Personal injury claims in Australia cover a wide range of situations where someone’s negligence or carelessness has caused harm. Some of the most common types of personal injury claims include:
+            Personal injury claims in Australia cover a wide range of situations where someone’s negligence or
+            carelessness has caused harm. Some of the most common types of personal injury claims include:
         </p>
         <ul>
-            <li><strong>Motor Vehicle Accidents:</strong> Injuries sustained in car, motorcycle, or pedestrian accidents.</li>
-            <li><strong>Workplace Injuries:</strong> Injuries occurring in the workplace due to employer negligence or unsafe working conditions.</li>
-            <li><strong>Medical Negligence:</strong> Injuries caused by the failure of medical professionals to meet accepted standards of care.</li>
-            <li><strong>Public Liability:</strong> Injuries occurring on public or private property due to hazardous conditions.</li>
+            <li><strong>Motor Vehicle Accidents:</strong> Injuries sustained in car, motorcycle, or pedestrian
+                accidents.</li>
+            <li><strong>Workplace Injuries:</strong> Injuries occurring in the workplace due to employer negligence or
+                unsafe working conditions.</li>
+            <li><strong>Medical Negligence:</strong> Injuries caused by the failure of medical professionals to meet
+                accepted standards of care.</li>
+            <li><strong>Public Liability:</strong> Injuries occurring on public or private property due to hazardous
+                conditions.</li>
             <li><strong>Product Liability:</strong> Injuries caused by defective or unsafe products.</li>
-            <li><strong>Slip and Fall Accidents:</strong> Injuries that happen when a person slips, trips, or falls due to unsafe conditions.</li>
+            <li><strong>Slip and Fall Accidents:</strong> Injuries that happen when a person slips, trips, or falls due
+                to unsafe conditions.</li>
         </ul>
 
         <h3>Eligibility for Compensation</h3>
         <p>
-            To be eligible for compensation in a personal injury case, certain criteria must be met. This generally includes proving that:
+            To be eligible for compensation in a personal injury case, certain criteria must be met. This generally
+            includes proving that:
         </p>
         <ul>
             <li>The injury was caused by the negligence or fault of another party.</li>
             <li>Your injury is serious enough to warrant a claim.</li>
-            <li>In most cases, you must lodge a claim within a specific time frame (typically 3 years from the date of the injury).</li>
+            <li>In most cases, you must lodge a claim within a specific time frame (typically 3 years from the date of
+                the injury).</li>
         </ul>
         <p>
-            Our lawyers will assess your case in detail to determine the best course of action and help you gather the evidence needed to strengthen your claim.
+            Our lawyers will assess your case in detail to determine the best course of action and help you gather the
+            evidence needed to strengthen your claim.
         </p>
 
         <h3>What Can You Claim?</h3>
@@ -195,11 +220,16 @@
             If you have been injured due to someone else’s negligence, you may be entitled to compensation for:
         </p>
         <ul>
-            <li><strong>Medical Expenses:</strong> Costs related to the treatment and rehabilitation of your injury.</li>
-            <li><strong>Lost Wages:</strong> Compensation for the income you have lost due to your inability to work.</li>
-            <li><strong>Pain and Suffering:</strong> Compensation for the physical pain and emotional distress caused by your injury.</li>
-            <li><strong>Future Care Costs:</strong> If your injury will require ongoing care or assistance, you may be entitled to compensation for future medical needs.</li>
-            <li><strong>Loss of Enjoyment of Life:</strong> If your injury significantly affects your quality of life, compensation may be available for the loss of your ability to enjoy everyday activities.</li>
+            <li><strong>Medical Expenses:</strong> Costs related to the treatment and rehabilitation of your injury.
+            </li>
+            <li><strong>Lost Wages:</strong> Compensation for the income you have lost due to your inability to work.
+            </li>
+            <li><strong>Pain and Suffering:</strong> Compensation for the physical pain and emotional distress caused by
+                your injury.</li>
+            <li><strong>Future Care Costs:</strong> If your injury will require ongoing care or assistance, you may be
+                entitled to compensation for future medical needs.</li>
+            <li><strong>Loss of Enjoyment of Life:</strong> If your injury significantly affects your quality of life,
+                compensation may be available for the loss of your ability to enjoy everyday activities.</li>
         </ul>
 
         <h3>The Personal Injury Claim Process in Australia</h3>
@@ -207,19 +237,28 @@
             The process of making a personal injury claim typically involves the following steps:
         </p>
         <ol>
-            <li><strong>Consultation:</strong> Meet with one of our lawyers for an initial consultation to assess the merits of your case.</li>
-            <li><strong>Investigation:</strong> Our team will gather all the necessary evidence, including medical records, witness statements, and accident reports.</li>
-            <li><strong>Negotiation:</strong> We will negotiate with the insurance company or responsible party to reach a fair settlement.</li>
-            <li><strong>Litigation:</strong> If a fair settlement cannot be reached, we will take the case to court to seek justice for you.</li>
+            <li><strong>Consultation:</strong> Meet with one of our lawyers for an initial consultation to assess the
+                merits of your case.</li>
+            <li><strong>Investigation:</strong> Our team will gather all the necessary evidence, including medical
+                records, witness statements, and accident reports.</li>
+            <li><strong>Negotiation:</strong> We will negotiate with the insurance company or responsible party to reach
+                a fair settlement.</li>
+            <li><strong>Litigation:</strong> If a fair settlement cannot be reached, we will take the case to court to
+                seek justice for you.</li>
         </ol>
 
         <h3>Why Choose Bansal Lawyers for Personal Injury Claims?</h3>
         <ul>
-            <li><strong>Expertise:</strong> We have a track record of successfully handling a wide range of personal injury cases in Australia.</li>
-            <li><strong>No Win, No Fee:</strong> We offer a no-win, no-fee service, meaning you don’t pay us unless we win your case.</li>
-            <li><strong>Personalised Service:</strong> We provide tailored advice and legal representation that focuses on your unique needs and circumstances.</li>
-            <li><strong>Compassionate Lawyers:</strong> We understand the emotional and financial strain that comes with a personal injury, and we are here to support you every step of the way.</li>
-            <li><strong>Transparent Advice:</strong> We offer honest and realistic advice, so you are always informed about the status of your case.</li>
+            <li><strong>Expertise:</strong> We have a track record of successfully handling a wide range of personal
+                injury cases in Australia.</li>
+            <li><strong>No Win, No Fee:</strong> We offer a no-win, no-fee service, meaning you don’t pay us unless we
+                win your case.</li>
+            <li><strong>Personalised Service:</strong> We provide tailored advice and legal representation that focuses
+                on your unique needs and circumstances.</li>
+            <li><strong>Compassionate Lawyers:</strong> We understand the emotional and financial strain that comes with
+                a personal injury, and we are here to support you every step of the way.</li>
+            <li><strong>Transparent Advice:</strong> We offer honest and realistic advice, so you are always informed
+                about the status of your case.</li>
         </ul>
 
     </div>
